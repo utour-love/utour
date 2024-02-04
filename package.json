@@ -3,10 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev   -o",
+    "dev": "nuxt dev  -o",
     "prod": "nuxt dev --dotenv .env.prod -o",
     "build": "nuxt build",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --dotenv .env.prod",
+    "cleanup":"nuxt cleanup",
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",
     "github:deploy": "nuxt cleanup && nuxt generate --dotenv .env.prod && gh-pages --nojekyll  -d .output/public",

@@ -16,14 +16,14 @@ jobs:
 
     steps:
       - name: Checkout代码库
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: main
 
       - name: 设置 Node.js 环境
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "20.11.0"
 
       - name: 设置 pnmp
         uses: pnpm/action-setup@v2
