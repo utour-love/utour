@@ -1,0 +1,1 @@
+import{_ as t}from"./headBar.Gfz8wsK6.js";import{_ as n,c as r,b as a,z as c,F as s,o as _}from"./entry.cbn_jxIr.js";import"./nuxt-link.n2Lnnojo.js";const l={};function m(e,f){const o=t;return _(),r(s,null,[a(o),c(e.$slots,"default")],64)}const i=n(l,[["render",m]]);export{i as default};
