@@ -2,6 +2,7 @@
 name: Generate Snake
 
 on:
+  push:
   watch:
     types: started
   schedule:
