@@ -36,6 +36,7 @@
     "@pinia/nuxt": "^0.5.1",
     "animate.css": "^4.1.1",
     "daisyui": "4.6.1",
-    "imagesloaded": "^5.0.0"
+    "imagesloaded": "^5.0.0",
+    "prettier": "^3.2.4"
   }
 }
