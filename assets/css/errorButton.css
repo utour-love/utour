@@ -1,0 +1,51 @@
+.button-name {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding-right: 16px;
+  padding-left: 16px;
+  overflow: hidden;
+  font-family: theme("fontFamily.primary");
+  font-size: 18px;
+  line-height: 1;
+  color: #36395a;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+  list-style: none;
+  appearance: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-color: #fcfcfd;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow:
+    rgb(45 35 66 / 20%) 0 2px 4px,
+    rgb(45 35 66 / 15%) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  transition:
+    box-shadow 0.15s,
+    transform 0.15s;
+}
+.button-name:focus {
+  box-shadow:
+    #d6d6e7 0 0 0 1.5px inset,
+    rgb(45 35 66 / 40%) 0 2px 4px,
+    rgb(45 35 66 / 30%) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+}
+.button-name:hover {
+  box-shadow:
+    rgb(45 35 66 / 30%) 0 4px 8px,
+    rgb(45 35 66 / 20%) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.button-name:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}

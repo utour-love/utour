@@ -1,0 +1,124 @@
+.search {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: rgb(219 226 249 / 27.8%);
+  border-radius: 6px;
+}
+.category {
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  background: rgb(219 226 249 / 27.8%);
+  border-radius: 6px;
+}
+.category h4 hr {
+  border: 1px dashed rgb(0 0 0 / 35.3%);
+}
+.category hr {
+  margin: 10px 0 30px;
+  border: 1px solid rgb(204 204 204 / 49%);
+}
+.category ul {
+  text-align: left;
+  list-style: none;
+}
+.category ul li {
+  margin: 15px 0;
+}
+.category ul li a {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.category ul li a:hover {
+  color: theme("colors.secondary/90");
+  transition: 0.3s ease;
+}
+.recent_post {
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  background: rgb(219 226 249 / 27.8%);
+  border-radius: 6px;
+}
+.recent_post h4 {
+  margin-bottom: 40px;
+}
+.recent_post h4 hr {
+  border: 1px dashed rgb(0 0 0 / 35.3%);
+}
+.recent_post hr {
+  margin: 10px 0 25px;
+  border: 1px solid rgb(204 204 204 / 40%);
+}
+.recent_post ul li {
+  margin: 20px 0;
+}
+.recent_post ul li a:hover {
+  color: theme("colors.secondary/20");
+  transition: 0.3s ease;
+}
+.recent_post ul li .post_item {
+  display: flex;
+}
+.recent_post ul li .post_item .post_item_info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+.recent_post ul li .post_item .post_item_info p {
+  font-size: 13px;
+  font-weight: 200;
+  text-align: right;
+}
+.recent_post ul li .post_item .post_item_info h6 {
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.subscr {
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  background: rgb(219 226 249 / 18%);
+  border-radius: 6px;
+}
+.subscr hr {
+  border: 1px dashed rgb(0 0 0 / 35.3%);
+}
+.tag_cloud {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: rgb(219 226 249 / 27.8%);
+  border-radius: 6px;
+}
+.tag_cloud ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  list-style: none;
+}
+.tag_cloud ul li {
+  margin: 5px;
+}
+.tag_cloud ul li a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.tag_cloud ul li a:hover {
+  color: theme("colors.secondary/90");
+  background-color: #dddddd;
+}

@@ -1,0 +1,60 @@
+name: Prettier
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+
+concurrency:
+  group: "prettier"
+  cancel-in-progress: true
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout代码库
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: 设置 Node.js 环境
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.x"
+
+      - name: 设置 pnmp
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: 安装 Prettier
+        run: pnpm add prettier
+
+      - name: 运行 Prettier 格式化
+        run: pnpm exec -- prettier --write .
+
+      - name: 检查是否有更改
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+
+      - name: 如果没有更改，则输出消息
+        run: echo "未检测到代码格式变化！👌"
+        if: env.changes == 'false'
+
+      - name: 提交和推送更改
+        run: |
+          if [ "${{ env.changes }}" == "true" ]; then
+            git config user.email "${{ secrets.USER_EMAIL }}"
+            git config user.name "${{ secrets.USER_NAME }}"
+            git add .
+            git commit -m "✨ 通过 GitHub Actions自动进行格式修正 🤖 "
+            git push
+          fi
