@@ -20,9 +20,6 @@ dependencies:
   imagesloaded:
     specifier: ^5.0.0
     version: 5.0.0
-  prettier:
-    specifier: ^3.2.4
-    version: 3.2.4
 
 devDependencies:
   '@egoist/tailwindcss-icons':
@@ -64,6 +61,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.33
     version: 8.4.33
+  prettier:
+    specifier: ^3.2.4
+    version: 3.2.4
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -6092,6 +6092,7 @@ packages:
     resolution: {integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: true
 
   /pretty-bytes@6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}

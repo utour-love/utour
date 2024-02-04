@@ -7,7 +7,7 @@
     "prod": "nuxt dev --dotenv .env.prod -o",
     "build": "nuxt build",
     "generate": "nuxt generate --dotenv .env.prod",
-    "cleanup":"nuxt cleanup",
+    "cleanup": "nuxt cleanup",
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",
     "github:deploy": "nuxt cleanup && nuxt generate --dotenv .env.prod && gh-pages --nojekyll  -d .output/public",
@@ -30,6 +30,7 @@
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "vue": "^3.4.15",
+    "prettier": "^3.2.4",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
@@ -37,7 +38,6 @@
     "@pinia/nuxt": "^0.5.1",
     "animate.css": "^4.1.1",
     "daisyui": "4.6.1",
-    "imagesloaded": "^5.0.0",
-    "prettier": "^3.2.4"
+    "imagesloaded": "^5.0.0"
   }
 }
