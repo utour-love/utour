@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-console.log(process.env.DEPLOY_PRESET === "github-pages" ? process.env.DEPLOY_GITHUB_BASEURL : process.env.DEPLOY_BASEURL, process.env.DEPLOY_PRESET === "github-pages" ? "assets" : "/_nuxt/");
+console.log(
+  process.env.DEPLOY_PRESET === "github-pages" ? process.env.DEPLOY_GITHUB_BASEURL : process.env.DEPLOY_BASEURL,
+  process.env.DEPLOY_PRESET === "github-pages" ? "assets" : "/_nuxt/"
+);
 
-export default  defineNuxtConfig({
+export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/tailwind.css", "~/assets/css/global.css", "animate.css/animate.min.css"],
   modules: ["@nuxtjs/eslint-module", "nuxt-headlessui", "@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
