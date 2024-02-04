@@ -5,5 +5,5 @@
 
 [![my github activity graph✨](https://github-readme-activity-graph.vercel.app/graph?username=youkei-zzz&theme=github)](https://github.com/youkei-zzz/github-readme-activity-graph)
 
-<div align="center"><img src="https://cdn.jsdelivr.net/gh/utour-love/utour/assets/github-contribution-grid-snake.svg" ></div>
+<div align="center"><img src="https://cdn.jsdelivr.net/gh/utour-love/utour/assets/github-snake/github-contribution-grid-snake.svg" ></div>
 
