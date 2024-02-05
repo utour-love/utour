@@ -1,0 +1,1 @@
+import{a as t}from"./headBar.KbLzgtSD.js";import{_ as r}from"./_plugin-vue_export-helper.x3n3nnut.js";import{c as a,b as n,k as c,F as s,o as _}from"./entry.eIOPhhuZ.js";import"./nuxt-link.16dLOMyA.js";const m={};function f(e,l){const o=t;return _(),a(s,null,[n(o),c(e.$slots,"default")],64)}const k=r(m,[["render",f]]);export{k as default};
