@@ -4,8 +4,20 @@
   >
     <section id="tag" class="hover:cursor-pointer ml-2">
       <NuxtLink to="/">
-        <img src="../assets/image/dark_logo_with_name.webp" alt="logo" class="dark:hidden xl:block hidden h-full w-full" />
-        <img src="../assets/image/light_logo_with_name.webp" alt="logo-light" class="dark:xl:block hidden h-full w-full" />
+        <img
+          loading="eager"
+          fetchpriority="high"
+          src="../assets/image/dark_logo_with_name.webp"
+          alt="logo"
+          class="dark:hidden xl:block hidden h-full w-full"
+        />
+        <img
+          loading="eager"
+          fetchpriority="high"
+          src="../assets/image/light_logo_with_name.webp"
+          alt="logo-light"
+          class="dark:xl:block hidden h-full w-full"
+        />
         <img src="../assets/image/dark-logo.webp" alt="" class="block xl:hidden dark:hidden h-full w-full" />
         <img src="../assets/image/light-logo.webp" alt="" class="xl:dark:hidden dark:block hidden h-full w-full" />
       </NuxtLink>
@@ -16,19 +28,17 @@
     >
       <span class="font-bold nav-item md:text-sm">
         <!-- <router-link :to="{ name: 'Home' }" class="hover:cursor-pointer">
-					<font-awesome-icon :icon="['fas', 'house']" class="pr-1" />
-					主页
-				</router-link> -->
+        <font-awesome-icon :icon="['fas', 'house']" class="pr-1" />
+        主页
+      </router-link> -->
 
-        <NuxtLink to="/">
-          <span class="i-fa6-solid-house pr-1"></span>
-          主页
-        </NuxtLink>
+        <span class="i-heroicons-solid-home pr-1"></span>
+        <NuxtLink to="/"> 主页 </NuxtLink>
       </span>
 
       <span class="dropdown dropdown-hover z-[999]">
         <!-- <font-awesome-icon :icon="['fas', 'compass']" class="pr-1" /> -->
-        <span class="i-fa6-solid-compass pr-1"> </span>
+        <span class="i-mingcute-compass-fill pr-1"> </span>
         <a href="javascript:void(0)" tabindex="0" class="m-1 font-primary font-bold cursor-pointer">活动</a>
         <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow-2xl bg-slate-50 dark:bg-slate-600 rounded-box w-52">
           <li>
@@ -37,10 +47,10 @@
           </li>
           <li>
             <!-- <router-link
-              :to="{ name: '' }"
-              class="font-semibold dark:hover:text-slate-50"
-              >正在进行</router-link
-            > -->
+            :to="{ name: '' }"
+            class="font-semibold dark:hover:text-slate-50"
+            >正在进行</router-link
+          > -->
             <NuxtLink to="/" class="font-semibold dark:hover:text-slate-50">正在进行</NuxtLink>
           </li>
         </ul>
@@ -48,22 +58,22 @@
 
       <span class="font-bold nav-item font-primary md:text-sm">
         <!-- 	<router-link :to="{ name: '' }" class="hover:cursor-pointer">
-					<font-awesome-icon :icon="['fas', 'bullhorn']" class="pr-[1vmin]" />
-					公告
-				</router-link> -->
+        <font-awesome-icon :icon="['fas', 'bullhorn']" class="pr-[1vmin]" />
+        公告
+      </router-link> -->
 
         <NuxtLink to="/">
           <!-- <font-awesome-icon :icon="['fas', 'bullhorn']" class="pr-[1vmin]" /> -->
-          <i class="i-fa6-solid-bullhorn"></i>
+          <i class="i-fa6-solid-bullhorn pr-[1vmin]"></i>
           公告
         </NuxtLink>
       </span>
 
       <span class="font-bold _notif nav-item font-primary md:text-sm">
         <!-- <router-link :to="{ name: 'Blog' }" class="hover:cursor-pointer">
-					<font-awesome-icon :icon="['fas', 'camera']" class="pr-1" />
-					社交
-				</router-link> -->
+        <font-awesome-icon :icon="['fas', 'camera']" class="pr-1" />
+        社交
+      </router-link> -->
         <NuxtLink to="/">
           <!-- <font-awesome-icon :icon="['fas', 'camera']" class="pr-1" /> -->
           <span class="i-fa6-solid-camera pr-1"></span>
@@ -73,9 +83,9 @@
 
       <span class="font-bold _notif nav-item font-primary md:text-sm">
         <!-- <router-link to="/help" class="hover:cursor-pointer">
-					<font-awesome-icon :icon="['fas', 'circle-question']" bounce style="--fa-animation-duration: 2s" />
-					帮助
-				</router-link> -->
+        <font-awesome-icon :icon="['fas', 'circle-question']" bounce style="--fa-animation-duration: 2s" />
+        帮助
+      </router-link> -->
         <NuxtLink to="/">
           <!-- <font-awesome-icon :icon="['fas', 'circle-question']" bounce style="--fa-animation-duration: 2s" /> -->
           <span class="i-fa6-solid-circle-question"></span>
@@ -128,7 +138,7 @@
 
         <div class="email_linkage scale-90 mr-5">
           <!-- <font-awesome-icon icon="fa-solid fa-envelope" class="absolute z-20 top-[15px] left-3 dark:text-slate-500" />
-          /> -->
+        /> -->
           <span class="i-fa6-solid-envelope absolute z-20 top-[15px] left-3 dark:text-slate-500"></span>
 
           <a href="mailto:utourmail@utour.love">
@@ -146,9 +156,45 @@
         </div>
       </div>
     </section>
+
     <!-- TODO:还有很多注释的component没有添加 -->
     <!-- <myBanner></myBanner> -->
   </header>
+  <ClientOnly>
+    <div
+      class="animate__animated z-50 cursor-help fixed right-0 top-24 w-80 h-auto text-sm leading-normal flex flex-col gap-4"
+      :class="{ animate__bounceOutRight: !AdblockTip, animate__bounceInRight: AdblockTip }"
+    >
+      <div class="bg-yellow-100 border-l-4 border-yellow-400 rounded p-4">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400">
+              <path
+                clip-rule="evenodd"
+                d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <div class="ml-3 text-yellow-700">
+            <p class="text-sm">
+              浏览器的广告拦截器可能会造成页面元素缺失，为了更好的体验，请
+              <strong class="font-medium text-yellow-700 underline underline-offset-4" href="#">关闭广告拦截器。</strong>
+            </p>
+          </div>
+
+          <div class="w-5 h-5 cursor-pointer" @click="AdblockTip = false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20">
+              <path
+                fill="#393a37"
+                d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
@@ -161,6 +207,7 @@ import { Disclosure } from "@headlessui/vue";
 // import { ArrowLeftStartOnRectangleIcon, Cog6ToothIcon, UserIcon } from "@heroicons/vue/24/outline";
 // import { getCurrentInstance } from "vue";
 
+const AdblockTip = useState("AdblockTip", () => true);
 const other = useState("showTip", () => true);
 const logInfoStore = useMyLogInfoStore();
 

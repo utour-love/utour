@@ -25,9 +25,15 @@ devDependencies:
   '@egoist/tailwindcss-icons':
     specifier: ^1.7.4
     version: 1.7.4(tailwindcss@3.4.1)
+  '@iconify-json/fa6-solid':
+    specifier: ^1.1.20
+    version: 1.1.20
   '@iconify-json/heroicons-solid':
     specifier: ^1.1.11
     version: 1.1.11
+  '@iconify-json/mingcute':
+    specifier: ^1.1.16
+    version: 1.1.16
   '@nuxtjs/eslint-module':
     specifier: ^4.1.0
     version: 4.1.0(eslint@8.56.0)(vite@5.0.12)(webpack@5.90.1)
@@ -918,8 +924,20 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
+  /@iconify-json/fa6-solid@1.1.20:
+    resolution: {integrity: sha512-99P9zOacNS56MNNT7Mzih2Loe3jzwNFKFBOiVh+kF+4D+AHW5zyksyvMizIgGu2cizFz6npaATlCtl3E5Zfjbw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/heroicons-solid@1.1.11:
     resolution: {integrity: sha512-Nzhjs8voo4d+gcrfhlY/F0bRonEmLHT1+DeD2nYubvAF151pxXPqTS9bRB49Hqpdxl1l9LS2VTPtQPRypj/csQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mingcute@1.1.16:
+    resolution: {integrity: sha512-iiVYjOPFyftzvBqN3cqYVfzuqSJL2n7vduX8UsmaaIB33EM6hKNJPntxVt700jHwyux/ibHsgUo8paeHBoxpWQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

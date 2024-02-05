@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nuxt dev  -o",
     "prod": "nuxt dev --dotenv .env.prod -o",
-    "build": "nuxt build",
-    "generate": "nuxt generate --dotenv .env.prod",
+    "build": "nuxt cleanup && nuxt build --dotenv .env.prod",
+    "generate": "nuxt cleanup && nuxt generate --dotenv .env.prod",
     "cleanup": "nuxt cleanup",
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",
@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
+    "@iconify-json/fa6-solid": "^1.1.20",
     "@iconify-json/heroicons-solid": "^1.1.11",
+    "@iconify-json/mingcute": "^1.1.16",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "autoprefixer": "^10.4.17",

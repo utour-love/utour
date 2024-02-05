@@ -22,5 +22,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: process.env.DEPLOY_PRESET
+  },
+
+  runtimeConfig: {
+    basePhotoURL: process.env.NUXT_CLOUDFLARE_PHOTO_BASE_URL
   }
 });

@@ -1,3 +1,9 @@
 {
-  "recommendations": ["nuxtr.nuxtr-vscode", "bradlc.vscode-tailwindcss", "vue.volar", "vue.vscode-typescript-vue-plugin"]
+  "recommendations": [
+    "nuxtr.nuxtr-vscode",
+    "bradlc.vscode-tailwindcss",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "github.vscode-github-actions"
+  ]
 }

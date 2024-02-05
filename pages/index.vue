@@ -1,6 +1,7 @@
 <template>
   <div class="overflow-x-hidden">
     <HeadBar></HeadBar>
+
     <main class="pb-[10vh]">
       <div class="slogan z-50 mt-28 lg:mt-36 mx-auto dark:text-slate-400 text-primary font-bold font-primary text-center mb-2">
         <h1 class="text-3xl md:text-xl mi:text-base mb-5">瞬间永存，珍藏终身</h1>
@@ -12,6 +13,8 @@
         class="relative dark:opacity-50 bg-[url('https://pub-b1b159b2eaaf4b8f891a2aecd338f83c.r2.dev/light-mode-hero.webp')] bg-no-repeat bg-contain box-border aspect-[1/0.5] transform-cpu w-screen overflow-x-hidden"
       >
         <img
+          loading="eager"
+          fetchpriority="high"
           src="../assets/image/car.webp"
           class="select-none animate-[carmove_8s_alternate-reverse_infinite_linear] w-[45vw] absolute my-[calc(1vw+1vh+15%)] mx-[calc(1vw+1vh+15%)] transform-cpu"
           alt="首页背景"
