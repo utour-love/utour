@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nuxt dev  -o",
     "prod": "nuxt dev --dotenv .env.prod -o",
-    "build": "nuxt cleanup && nuxt build --dotenv .env.prod",
+    "build": "nuxt build --dotenv .env.prod",
     "generate": "nuxt cleanup && nuxt generate --dotenv .env.prod",
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",

@@ -21,7 +21,10 @@ export default defineNuxtConfig({
     buildAssetsDir: process.env.DEPLOY_PRESET === "github-pages" ? "assets" : "/_nuxt/"
   },
   nitro: {
-    preset: process.env.DEPLOY_PRESET
+    preset: process.env.DEPLOY_PRESET,
+    prerender: {
+      autoSubfolderIndex: process.env.DEPLOY_PRESET === "cloudflare-pages-static"
+    }
   },
 
   runtimeConfig: {

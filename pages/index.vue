@@ -10,7 +10,7 @@
 
       <!-- heroBackground & car -->
       <div
-        class="relative dark:opacity-50 bg-[url('https://pub-b1b159b2eaaf4b8f891a2aecd338f83c.r2.dev/light-mode-hero.webp')] bg-no-repeat bg-contain box-border aspect-[1/0.5] transform-cpu w-screen overflow-x-hidden"
+        class="relative dark:opacity-50 bg-[url('../assets/image/light-mode-hero.webp')] bg-no-repeat bg-contain box-border aspect-[1/0.5] transform-cpu w-screen overflow-x-hidden"
       >
         <img
           loading="eager"

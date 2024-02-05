@@ -162,6 +162,7 @@
   </header>
   <ClientOnly>
     <div
+      v-if="userDecisionStore.getAdDetection"
       class="animate__animated z-50 cursor-help fixed right-0 top-24 w-80 h-auto text-sm leading-normal flex flex-col gap-4"
       :class="{ animate__bounceOutRight: !AdblockTip, animate__bounceInRight: AdblockTip }"
     >
@@ -183,7 +184,7 @@
             </p>
           </div>
 
-          <div class="w-5 h-5 cursor-pointer" @click="AdblockTip = false">
+          <div class="w-5 h-5 cursor-pointer" @click="userDecision">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20">
               <path
                 fill="#393a37"
@@ -204,12 +205,19 @@
 // import myShoppingCart from '@components/myShoppingCart.vue';
 // import myToggleTheme from '@components/myToggleTheme.vue';
 import { Disclosure } from "@headlessui/vue";
+import { useMyUserDecisionStore } from "../stores/userDecision";
 // import { ArrowLeftStartOnRectangleIcon, Cog6ToothIcon, UserIcon } from "@heroicons/vue/24/outline";
 // import { getCurrentInstance } from "vue";
 
 const AdblockTip = useState("AdblockTip", () => true);
 const other = useState("showTip", () => true);
 const logInfoStore = useMyLogInfoStore();
+const userDecisionStore = useMyUserDecisionStore();
+
+function userDecision() {
+  userDecisionStore.changeAdDetection;
+  AdblockTip.value = false;
+}
 
 // const dropDownItems: DropDownProps[] = [
 //   {
