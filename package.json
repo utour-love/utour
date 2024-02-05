@@ -7,7 +7,6 @@
     "prod": "nuxt dev --dotenv .env.prod -o",
     "build": "nuxt cleanup && nuxt build --dotenv .env.prod",
     "generate": "nuxt cleanup && nuxt generate --dotenv .env.prod",
-    "cleanup": "nuxt cleanup",
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",
     "github:deploy": "nuxt cleanup && nuxt generate --dotenv .env.prod && gh-pages --nojekyll  -d .output/public",

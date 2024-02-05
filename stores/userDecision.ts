@@ -3,21 +3,23 @@ import { defineStore } from "pinia";
 /**
  * @description 代表一个用于管理应用程序主题的商店。
  */
-export const useMyThemeStore = defineStore(
-  "myThemeStore",
+export const useMyUserDecisionStore = defineStore(
+  "myUserDecisionStore",
   () => {
     /**
-     * @description 应用程序的当前主题，相当于state。
+     * @description 应用程序的初始值,相当于state。
      */
     const theme: Ref<"light" | "dark" | undefined> = ref("light");
+    const adDetection: Ref<boolean> = ref(true);
 
     /**
-     * @description 获取应用程序的当前主题,相当于getter。
+     * @description  获取计算的值,相当于getter。
      */
     const getTheme = computed(() => theme.value);
+    const getAdDetection = computed(() => adDetection.value);
 
     /**
-     * @description 更改应用程序的主题，相当于mutation。
+     * @description 更改值，相当于mutation。
      */
     function changeTheme() {
       switch (theme.value) {
@@ -32,8 +34,11 @@ export const useMyThemeStore = defineStore(
           break;
       }
     }
+    function changeAdDetection() {
+      adDetection.value = false;
+    }
 
-    return { getTheme, changeTheme, theme };
+    return { getTheme, changeTheme, theme, getAdDetection, changeAdDetection, adDetection };
   },
   {
     persist: {
