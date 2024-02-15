@@ -9,9 +9,7 @@
       </div>
 
       <!-- heroBackground & car -->
-      <div
-        class="relative dark:opacity-50 bg-[url('../assets/image/light-mode-hero.webp')] bg-no-repeat bg-contain box-border aspect-[1/0.5] transform-cpu w-screen overflow-x-hidden"
-      >
+      <div id="landing" class="relative dark:opacity-50 bg-no-repeat bg-contain box-border aspect-[1/0.5] transform-cpu w-screen overflow-x-hidden">
         <img
           loading="eager"
           fetchpriority="high"
@@ -267,4 +265,7 @@
 
 <style scoped lang="css">
 @import "../assets/css/algoliaCustom.css";
+#landing {
+  background-image: url("../assets/image/light-mode-hero.webp");
+}
 </style>

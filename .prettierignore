@@ -5,9 +5,6 @@
 /node_modules/**
 
 **/*.svg
-**/*.sh
- 
-
 .env.*
 
 pnpm-lock.yaml
