@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
 import { computed, ref } from "vue";
 
-
 /**
  * @description 代表一个用于管理登录信息的存储。
  */
@@ -31,7 +30,7 @@ export const useMyLogInfoStore = defineStore(
   },
   {
     persist: {
-      storage: persistedState.localStorage,
+      storage: persistedState.localStorage
     }
   }
 );

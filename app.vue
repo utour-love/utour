@@ -4,8 +4,6 @@
   </NuxtLayout>
 </template>
 <script lang="ts" setup>
-
-
 useHead({
   title: "utour",
   meta: [

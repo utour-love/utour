@@ -19,17 +19,15 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.DEPLOY_PRESET === "github-pages" ? process.env.DEPLOY_GITHUB_BASEURL : process.env.DEPLOY_BASEURL,
     buildAssetsDir: process.env.DEPLOY_PRESET === "github-pages" ? "assets" : "/_nuxt/"
-
   },
   nitro: {
     preset: process.env.DEPLOY_PRESET,
-    esbuild:{
-      options:{
+    esbuild: {
+      options: {
         treeShaking: true,
         minify: true,
         target: "es2015",
-        drop: ["console"],
-        
+        drop: ["console"]
       }
     },
     prerender: {
