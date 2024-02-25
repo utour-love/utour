@@ -175,6 +175,12 @@ import { Disclosure } from "@headlessui/vue";
 
 const other = useState("showTip", () => true);
 const logInfoStore = useMyLogInfoStore();
+const userDecisionStore = useMyUserDecisionStore();
+
+function userDecision() {
+  userDecisionStore.changeAdDetection;
+  AdblockTip.value = false;
+}
 
 // const dropDownItems: DropDownProps[] = [
 //   {

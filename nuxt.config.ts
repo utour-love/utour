@@ -26,9 +26,12 @@ export default defineNuxtConfig({
     preset: process.env.DEPLOY_PRESET,
     esbuild: {
       options: {
+    esbuild: {
+      options: {
         treeShaking: true,
         minify: true,
         target: "es2015",
+        drop: ["console"]
         drop: ["console"]
       }
     },

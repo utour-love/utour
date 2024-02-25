@@ -24,5 +24,11 @@ export const useMyLogInfoStore = defineStore("myLogInfoStore", () => {
     loginStatus.value = status;
   }
 
-  return { getLoginStatus, changeLoginStatus, loginStatus };
-});
+    return { getLoginStatus, changeLoginStatus, loginStatus };
+  },
+  {
+    persist: {
+      storage: persistedState.localStorage
+    }
+  }
+);
