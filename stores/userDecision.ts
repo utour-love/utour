@@ -42,7 +42,7 @@ export const useMyUserDecisionStore = defineStore(
   },
   {
     persist: {
-      storage: persistedState.localStorage
+      storage: persistedState.sessionStorage
     }
   }
 );

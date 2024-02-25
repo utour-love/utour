@@ -19,7 +19,7 @@
         />
       </div>
 
-      <landing></landing>
+      <HomeLanding></HomeLanding>
 
       <!-- introduction -->
       <div class="relative">
@@ -74,7 +74,7 @@
             <div class="lg:hidden hero-content text-center">
               <div class="max-w-xl text-slate-600 dark:text-slate-400">
                 <h1 class="mb-5 text-xl font-bold tracking-widest">准备好了吗？出发吧</h1>
-                <p class="mb-5 leading-[40px] lg:text-right mi:line-clamp-5 underline decoration-dashed underline-offset-4">
+                <p class="lg:mb-5 leading-[40px] lg:text-right mi:line-clamp-5 underline decoration-dashed underline-offset-4">
                   踏上新的旅途，追随内心，记录心动的瞬间。无论是穿越大陆还是漫游异国，与您一同启程，用相机捕捉每处风景。从辽阔的海洋到雄伟的山脉，每个景致都是独一无二的艺术。
                 </p>
               </div>
@@ -218,7 +218,7 @@
         <div class="relative pb-20 pt-10 sm:pb-16">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
             <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-              <h1 class="text-3xl font-bold justify-self-center text-blue-600 dark:text-slate-300 sm:text-6xl sm:justify-center">
+              <h1 class="text-3xl mi:text-2xl font-bold justify-self-center text-blue-600 dark:text-slate-300 sm:text-6xl sm:justify-center">
                 <span class="sr-only">Tralive - </span>探索世界，分享心动瞬间
               </h1>
               <div class="mt-6 space-y-6 text-base tracking-tight text-blue-900 dark:text-slate-400">
@@ -257,14 +257,17 @@
           </div>
         </div>
       </div>
+
+      <HomeMarquee></HomeMarquee>
+      <FooterBar></FooterBar>
     </main>
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
-<style scoped lang="css">
-@import "../assets/css/algoliaCustom.css";
+<style lang="css">
+/* @import "../assets/css/algoliaCustom.css"; */
 #landing {
   background-image: url("../assets/image/light-mode-hero.webp");
 }
