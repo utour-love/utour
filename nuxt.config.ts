@@ -16,17 +16,9 @@ export default defineNuxtConfig({
     lintOnStart: process.env.LINT_ON_START === "true"
   },
 
-<<<<<<< HEAD
-   
-
   app: {
     baseURL: process.env.DEPLOY_BASEURL,
     buildAssetsDir: process.env.DEPLOY_BUILDASSETSDIR
-=======
-  app: {
-    baseURL: process.env.DEPLOY_PRESET === "github-pages" ? process.env.DEPLOY_GITHUB_BASEURL : process.env.DEPLOY_BASEURL,
-    buildAssetsDir: process.env.DEPLOY_PRESET === "github-pages" ? "assets" : "/_nuxt/"
->>>>>>> 714a38f7cb13dee4cbae7fa8ca48c67fe6d29525
   },
   nitro: {
     preset: process.env.DEPLOY_PRESET,
