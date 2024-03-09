@@ -1,7 +1,7 @@
 <template>
   <headBar></headBar>
   <slot></slot>
-  <!-- <footerBar /> -->
+  <footerBar />
 </template>
 
 <script lang="ts" setup></script>

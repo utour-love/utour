@@ -5,7 +5,7 @@
 </template>
 <script lang="ts" setup>
 useHead({
-  title: "utour",
+  title: "Tralive",
   meta: [
     {
       hid: "description",

@@ -10,8 +10,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt cleanup && nuxt prepare",
     "github:deploy": "nuxt cleanup && nuxt generate --dotenv .env.prod && gh-pages --nojekyll -d .output/public",
-    "lint:prettier": "prettier --write \"./**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
-    "lint:eslint": "eslint --fix --ext .vue,.ts ."
+    "lint:prettier": "prettier --write \"./**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\""
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
@@ -39,7 +38,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.9.0",
     "animate.css": "^4.1.1",
-    "daisyui": "4.7.2",
+    "daisyui": "4.7.3",
     "imagesloaded": "^5.0.0",
     "vue-clipboard3": "^2.0.0",
     "vue3-marquee": "^4.2.0"

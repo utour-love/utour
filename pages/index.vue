@@ -259,7 +259,6 @@
       </div>
 
       <HomeMarquee></HomeMarquee>
-      <FooterBar></FooterBar>
     </main>
   </div>
 </template>
