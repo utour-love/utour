@@ -179,7 +179,6 @@ const userDecisionStore = useMyUserDecisionStore();
 
 function userDecision() {
   userDecisionStore.changeAdDetection;
- 
 }
 
 // const dropDownItems: DropDownProps[] = [
