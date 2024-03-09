@@ -179,7 +179,7 @@ const userDecisionStore = useMyUserDecisionStore();
 
 function userDecision() {
   userDecisionStore.changeAdDetection;
-  AdblockTip.value = false;
+ 
 }
 
 // const dropDownItems: DropDownProps[] = [
